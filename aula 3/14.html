@@ -1,0 +1,24 @@
+<script>
+    let nota1, nota2, nota3, tipoDeMedia, media;
+
+nota1 = parseFloat(prompt("Digite a primeira nota: "));
+nota2 = parseFloat(prompt("Digite a segunda nota: "));
+nota3 = parseFloat(prompt("Digite a terceira nota: "));
+
+
+tipoDeMedia = prompt("Digite o tipo de média (ARITMETICA, PONDERADA, HARMONICA): ");
+
+
+if (tipoDeMedia.toUpperCase() === "ARITMETICA") {
+  media = (nota1 + nota2 + nota3) / 3;
+  alert(`A média aritmética é: ${media.toFixed(2)}`);
+} else if (tipoDeMedia.toUpperCase() === "PONDERADA") {
+  media = (nota1*3 + nota2*3 + nota3*4) / 10;
+  alert(`A média ponderada é: ${media.toFixed(2)}`);
+} else if (tipoDeMedia.toUpperCase() === "HARMONICA") {
+  media = 3 / ((1/nota1) + (1/nota2) + (1/nota3));
+  alert(`A média harmónica é: ${media.toFixed(2)}`);
+} else {
+  alert("Tipo de média inválido!");
+}
+</script>

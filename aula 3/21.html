@@ -1,0 +1,89 @@
+<script>
+     let nome = prompt("Digite o seu nome!");
+    let idade = parseInt(prompt("Digite sua idade!"));
+    let grupo = prompt("Digite o seu grupo de risco utilizando B(baixo), M(médio) e A(alto).");
+
+        if (17 <= idade && idade <= 20){
+            switch (grupo){
+            case "B":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '1'.");
+                break;
+            case "M":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '2'.");
+                break;
+            case "A":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '3'.");
+                break;
+            default:
+                alert("Grupo de risco inválido.");
+                break;
+            }
+        }
+        else if (21 <= idade && idade <= 24){
+            switch (grupo){
+            case "B":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '2'.");
+                break;
+            case "M":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '3'.");
+                break;
+            case "A":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '4'.");
+                break;
+            default:
+                alert("Grupo de risco inválido.");
+                break;     
+            }      
+        }
+        else if (25 <= idade && idade <= 34){
+            switch (grupo){
+            case "B":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '3'.");
+                break;
+            case "M":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '4'.");
+                break;
+            case "A":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '5'.");
+                break;
+            default:
+                alert("Grupo de risco inválido.");
+                break;     
+            }    
+        }
+        else if (35 <= idade && idade <= 64){
+            switch (grupo){
+            case "B":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '4'.");
+                break;
+            case "M":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '5'.");
+                break;
+            case "A":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '6'.");
+                break;
+            default:
+                alert("Grupo de risco inválido.");
+                break;     
+            }    
+        }
+        else if (idade >= 65 && idade <= 70){
+            switch (grupo){
+            case "B":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '7'.");
+                break;
+            case "M":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '8'.");
+                break;
+            case "A":
+                alert(" O código de seguro para a pessoa de nome " + nome + " e idade de " + idade + " é de número '9'.");
+                break;
+            default:
+                alert("Grupo de risco inválido.");
+            break;     
+            }  
+        }
+        else{
+        alert("Digite uma idade válida!")
+        }
+</script>

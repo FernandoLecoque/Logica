@@ -1,0 +1,15 @@
+<script>
+      let lado_1 = parseInt (prompt("Digite um valor intiro para o primeiro lado do triangulo."))
+    let lado_2 = parseInt (prompt("Digite um valor intiro para o segundo lado do triangulo."))
+    let lado_3 = parseInt (prompt("Digite um valor intiro para o terceiro lado do triangulo."))
+
+    if (lado_1 == lado_2  && lado_1 == lado_3 && lado_2 == lado_3){
+        alert ("Este é um triangulo Equilatero.")
+    }
+    else if (lado_1 == lado_2 || lado_2 == lado_3 || lado_3 == lado_1){
+        alert("Este é um triangulo Isoceles.")
+    }
+    else{
+        alert("Este é um triangulo Escaleno.")
+    }
+</script>

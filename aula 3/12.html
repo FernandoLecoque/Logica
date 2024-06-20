@@ -1,0 +1,21 @@
+<script>
+    let tipo_de_cliente = parseFloat(prompt("tipo de cliente"));
+let valor_de_kwh = parseFloat(prompt("digite o valor de gasto de energia"))
+    switch (tipo_de_cliente){
+        case 1:
+            alert("Residencia, valor da conta: " + 0.6*valor_de_kwh);
+            
+            break;
+            case 2:
+            alert("Comercial, valor da conta:" + 0.48*valor_de_kwh);
+            
+            break;
+            case 3:
+                alert("Industria, valor da conta:" + 1.29*valor_de_kwh);
+                break;
+
+    }
+
+
+
+</script>

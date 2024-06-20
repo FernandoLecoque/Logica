@@ -1,0 +1,29 @@
+<script>
+      let codigo = prompt("Digite o código do produto!")
+    let quantia = parseInt(prompt("Digite a quantidade do produto comprada."))
+
+    let code_1 = 5.32*quantia
+    let code_2 = 6.45*quantia
+    let code_3 = 2.37*quantia
+
+    switch (codigo){
+        case "1001":
+            alert("O valor final será de " + code_1 + " reais.")
+            break
+        case "1324":
+            alert("O valor final será de " + code_2 + " reais.")    
+            break
+        case "6548":
+            alert("O valor final será de " + code_3 + " reais.")
+            break    
+        case "0987":
+            alert("O valor final será de " + code_1 + " reais.")
+            break
+        case "7623":
+            alert("O valor final será de " + code_2 + " reais.")
+            break
+        default:
+            alert("ERRO! Digite um codigo valido!")
+            break
+    }
+</script>

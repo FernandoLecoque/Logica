@@ -1,0 +1,43 @@
+<script>
+     let nome = prompt("Digite seu nome:")
+    let genero = prompt ("Digite '1' para genero femino e '2 para masculino':")
+    let altura = parseFloat (prompt("Digite sua altura em metros:"))
+    let idade = parseInt(prompt("Digite sua idade:"))
+
+    let peso_1_m = 72.7*altura - 58
+    let peso_2_m = 72.7*altura - 53
+    let peso_3_m = 72.7*altura - 45
+    let peso_4_m = 72.7*altura - 50
+    let peso_5_m = 72.7*altura - 58
+    let peso_1_f = 62.1*altura - 44.7
+    let peso_2_f = 62.1*altura - 45
+    let peso_3_f = 62.1*altura - 49
+
+    if(genero == 2 && altura > 1.7 && idade <= 20){
+        alert ("O peso ideal de " + nome + " é de " + peso_1_m +"kg.")
+    }
+    else if (genero == 2 && altura > 1.7 && idade >= 21 && idade <= 39){
+        alert ("O peso ideal de " + nome + " é de " + peso_2_m + "kg.")
+    }
+    else if (genero == 2 && altura > 1.7 && idade >= 40){
+        alert ("O peso ideal de " + nome + " é de " + peso_3_m + "kg.")
+    }
+    else if (genero == 2 && altura <= 1.7 && idade <= 40){
+        alert ("O peso ideal de " + nome + " é de " + peso_4_m + "kg.")
+    }
+    else if (genero == 2 && altura <= 1.7 && idade > 40){
+        alert ("O peso ideal de " + nome + " é de " + peso_5_m + "kg.")
+    }
+    else if (genero == 1 && altura > 1.5){
+        alert ("O peso ideal de " + nome + " é de " + peso_1_f + "kg.")
+    }
+    else if (genero == 1 && altura <= 1.5 && idade >= 35){
+        alert ("O peso ideal de " + nome + " é de " + peso_2_f + "kg.")
+    }
+    else if (genero == 1 && altura <= 1.5 && idade < 35){
+        alert ("O peso ideal de " + nome + " é de " + peso_3_f + "kg.")
+    }
+    else{
+        alert("Digite uma opcao válida!")
+    }
+</script>

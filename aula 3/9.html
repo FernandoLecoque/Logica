@@ -1,0 +1,15 @@
+<script>
+    let peso = parseInt(prompt("digite o peso"))
+    let excesso = 0
+    let multa = 0 
+
+    if (peso >50){
+        excesso = peso - 50
+        multa = excesso * 4
+        alert("Você pagará uma multa de R$ "+multa+" por excesso de "+excesso+" kg")
+    }
+    else{
+        alert("nao foi acima de peso")
+    }
+
+</script>

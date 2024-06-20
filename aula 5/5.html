@@ -1,0 +1,22 @@
+<script>
+    let pessoasAptas = 0;
+let pessoasInaptas = 0;
+
+let n = parseInt(prompt("Informe o numero de pessoas: "));
+
+for (let i = 0; i < n; i++) {
+  let nome = prompt("Informe o nome da pessoa: ");
+  let sexo = prompt("Informe o sexo da pessoa (M/F): ");
+  let idade = parseInt(prompt("Informe a idade da pessoa: "));
+  let saude = prompt("Informe a saúde da pessoa: ");
+
+  if (sexo.toUpperCase() === "M" && idade >= 18 && idade <= 45 && saude.toUpperCase() === "S") {
+    pessoasAptas++;
+  } else {
+    pessoasInaptas++;
+  }
+}
+
+alert(`Total de pessoas aptas: ${pessoasAptas}`);
+alert(`Total de pessoas inaptas: ${pessoasInaptas}`);
+</script>
